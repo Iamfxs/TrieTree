@@ -1,0 +1,18 @@
+{
+    "name": "fuxuesong/dfa1",
+    "description": "shujuguolvgongju",
+    "license": "MIT",
+    "authors": [
+	{
+    	"name": "fxsmjj",
+	"email":"15110178209@163.com"
+	}
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+	    "psr-4":{
+		    "DFA1\\":"src/"
+		}
+	}
+}
