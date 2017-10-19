@@ -1,18 +1,24 @@
 {
-    "name": "fuxuesong/dfa1",
-    "description": "shujuguolvgongju",
+    "name": "fu/composer-car",
+    "description": "this is a test",
+    "type": "library",
     "license": "MIT",
     "authors": [
-	{
-    	"name": "fxsmjj",
-	"email":"15110178209@163.com"
-	}
+        {
+            "name": "fxsmjj",
+            "email": "15110178209@163.com"
+        }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+    	"php":">=5.3.0"
+    },
     "autoload":{
 	    "psr-4":{
-		    "DFA1\\":"src/"
-		}
+		   "Ford\\Escape\\": "src/Ford/Escape",
+		   "Ford\\Fusion\\": "src/Ford/Fusion",
+		   "Ford\\Focus\\": "src/Ford/Focus",
+		   "Ford\\Fiesta\\": "src/Ford/Fiesta"
+	    }
 	}
 }

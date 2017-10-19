@@ -6,5 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'DFA1\\' => array($baseDir . '/src'),
+    'Ford\\Fusion\\' => array($baseDir . '/src/Ford/Fusion'),
+    'Ford\\Focus\\' => array($baseDir . '/src/Ford/Focus'),
+    'Ford\\Fiesta\\' => array($baseDir . '/src/Ford/Fiesta'),
+    'Ford\\Escape\\' => array($baseDir . '/src/Ford/Escape'),
 );

@@ -4,27 +4,42 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitfe29794775d6edc9ef2619086ca93860
+class ComposerStaticInitaf8a3b4c852ea70623ab2332df113fdb
 {
     public static $prefixLengthsPsr4 = array (
-        'D' => 
+        'F' => 
         array (
-            'DFA1\\' => 5,
+            'Ford\\Fusion\\' => 12,
+            'Ford\\Focus\\' => 11,
+            'Ford\\Fiesta\\' => 12,
+            'Ford\\Escape\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'DFA1\\' => 
+        'Ford\\Fusion\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/src/Ford/Fusion',
+        ),
+        'Ford\\Focus\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Ford/Focus',
+        ),
+        'Ford\\Fiesta\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Ford/Fiesta',
+        ),
+        'Ford\\Escape\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Ford/Escape',
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitfe29794775d6edc9ef2619086ca93860::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitfe29794775d6edc9ef2619086ca93860::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitaf8a3b4c852ea70623ab2332df113fdb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitaf8a3b4c852ea70623ab2332df113fdb::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
